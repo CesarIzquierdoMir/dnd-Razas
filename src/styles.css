@@ -1,0 +1,212 @@
+/* You can add global styles to this file, and also import other style files */
+/* En tu archivo CSS */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.icono {
+    width: 40px; /* Cambia el tamaño según sea necesario */
+    height: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .icono2 {
+    width: 40px; /* Cambia el tamaño según sea necesario */
+    height: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .imagenes {
+    width: 400px; /* Cambia el tamaño según sea necesario */
+    height: 400px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .imagenes2 {
+    width: 200px; /* Cambia el tamaño según sea necesario */
+    height:200px;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  
+  .navbar-custom {
+    background-color: #b44a3b; /* Este es un tono de azul más fuerte */
+  }
+  
+  .navbar-custom2 {
+   
+    background-color: #f1d34f; /* Este es un tono de azul más fuerte */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco */
+  }
+  
+
+
+  .footer {
+    position: -webkit-sticky;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  /* En el archivo .css o .scss del componente */
+.slider-container {
+  max-width: 800px; /* Establece el ancho máximo del slider */
+  margin: 0 auto; /* Centra el slider horizontalmente */
+}
+
+.ng-image-slider img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes para que no se desborden del contenedor */
+  height: auto; /* Permite que las imágenes mantengan su proporción de aspecto */
+  border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a las imágenes */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al cambiar la escala de las imágenes */
+}
+
+.ng-image-slider img:hover {
+  transform: scale(1.05); /* Escala ligeramente la imagen cuando el mouse está encima para un efecto de zoom */
+}
+
+.ng-image-slider .ng-image-slider-content {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para los títulos de las imágenes */
+  padding: 10px; /* Añade espacio alrededor del contenido del título */
+  position: absolute; /* Posiciona el contenido del título encima de la imagen */
+  bottom: 0; /* Sitúa el contenido del título en la parte inferior */
+  left: 0; /* Sitúa el contenido del título en la parte izquierda */
+  width: 100%; /* Ajusta el ancho del contenido del título al 100% del contenedor */
+  color: #fff; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente del título */
+  text-align: center; /* Centra el texto horizontalmente */
+  border-bottom-left-radius: 8px; /* Agrega bordes redondeados en la esquina inferior izquierda */
+  border-bottom-right-radius: 8px; /* Agrega bordes redondeados en la esquina inferior derecha */
+}
+
+.ng-image-slider .ng-image-slider-content p {
+  margin: 0; /* Elimina el margen por defecto del párrafo dentro del contenido del título */
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
+  grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item {
+  border-radius: 8px;
+  overflow: hidden; /* Evita que las imágenes sobresalgan de los bordes */
+}
+
+.grid-item {
+  border-radius: 8px;
+  overflow: hidden; /* Evita que las imágenes sobresalgan de los bordes */
+}
+
+.grid-item img {
+  width: 100%; /* La imagen ocupa el ancho completo de la celda */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Levanta ligeramente la imagen en hover */
+}
+
+
+
+/*grid 2*/
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Tres columnas con el mismo ancho */
+  grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item2 {
+  border: 1px solid #9d9b9b;
+  padding: 5px;
+  align-items: center; /* Alinea verticalmente los elementos secundarios en el centro */
+
+}
+
+.imagenesR   {
+  max-width: 70%; /* Ajusta la imagen para que su ancho máximo sea del 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+  align-items: center;
+
+
+}
+
+.text2 {
+  grid-column: 5 / -1; /* Texto en las columnas restantes */
+}
+
+
+
+
+
+
+/*menu izquierdo*/
+.menu-container {
+  position: fixed;
+  top: 9%;
+  left: 0%;
+  background-color: #b44a3b; /* Cambia esto por el color que desees */
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(195, 99, 99, 0.1);
+  
+  max-height: calc(100% - 20px); /* Altura máxima del menú */
+  overflow-y: auto; /* Habilitar el desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.menu-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1;
+}
+
+.menu-container ul li {
+  margin-bottom: 2px;
+}
+
+.menu-container ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Cambia esto por el color que desees */
+  font-weight: bold;
+}
+
+.menu-container ul li a:hover {
+  color: #e9db1a; /* Cambia esto por el color de hover que desees */
+}
+
+.collapsed {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Estilo para el botón */
+.menu-toggle-button {
+  background-color: #e98578;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Añadir margen inferior para separarlo del menú */
+}
+
+/* Estilo para el botón cuando está activo */
+.menu-toggle-button:hover {
+  background-color: #cf7367;
+}
+
+/* sin decorar*/
+a.no-decoration {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+  text-align: center;
+  text-shadow: black;  
+}
